@@ -1,0 +1,8 @@
+importFrom(httr, GET)
+importFrom(httr, POST)
+importFrom(httr, config)
+importFrom(httr, http_status)
+importFrom(httr, stop_for_status)
+importFrom(XML, xmlValue)
+
+exportPattern("^[[:alpha:]]+")
