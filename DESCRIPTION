@@ -1,10 +1,10 @@
 Package: urlshorteneR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Various routes to generate abbreviated URLs.
 Version: 0.1
 Date: 2015-08-26
 Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
+Maintainer: Andrew Collier <andrew@exegetic.biz>
 Description: More about what it does (maybe more than one line)
 License: What license is it under?
 LazyData: TRUE
