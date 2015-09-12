@@ -4,3 +4,4 @@
 .httr-oauth
 .Rbuildignore
 *.Rproj
+account-credentials.json
