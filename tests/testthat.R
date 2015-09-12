@@ -1,4 +1,4 @@
 library(testthat)
-library(urlshorteneR)
+library(tweeteR)
 
 test_check("urlshorteneR")

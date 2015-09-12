@@ -1,3 +1,8 @@
+# TODO:
+#
+# 1. Could we use ROauth package to handle all of this?
+# 2. Would it be better to present an OO interface (like myfxbook project)?
+
 # To retrieve cached tokens use
 #
 # > readRDS('.httr-oauth')
