@@ -72,3 +72,9 @@ Create an account on [bitly](https://bitly.com/). Login and then [register](http
 ### Redirect URI
 
 Set this to http://localhost:1410.
+
+## Troubleshooting
+
+### Authentication
+
+If you run into issues with authentication (for example, getting the `(401) Unauthorized` error) then you can try deleting the `.httr-oauth` file.

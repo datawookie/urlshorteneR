@@ -1,5 +1,7 @@
 context("Google Authentication")
 
+library(RJSONIO)
+
 HTTROAUTH = ".httr-oauth"
 HTTROAUTHPATH = "../.."
 
@@ -13,9 +15,9 @@ test_that("Linking in .httr_auth", {
   expect_true(file.exists(HTTROAUTH))
 })
 
+credentials = fromJSON("../../account-credentials.json", simplify = FALSE)
+
 test_that("OAuth is successful (Google)", {
-  key = "863558629146-2ag2qh1j4c976mf5dtm6n98gi85esn2h.apps.googleusercontent.com"
-  secret = "BmKO7fNzZWwexWDp3x0sNh_c"
-  shortener_authenticate(key, secret)
+  shortener_authenticate(credentials$google$key, credentials$google$secret)
   expect_equal(TRUE, TRUE)
 })
