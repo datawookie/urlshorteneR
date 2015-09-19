@@ -19,5 +19,5 @@ credentials = fromJSON("../../account-credentials.json", simplify = FALSE)
 
 test_that("OAuth is successful (Google)", {
   shortener_authenticate(credentials$google$key, credentials$google$secret)
-  expect_equal(TRUE, TRUE)
+  expect_true(exists("oauth_token", oauth_cache))
 })
