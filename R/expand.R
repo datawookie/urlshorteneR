@@ -8,7 +8,7 @@ expand.google <- function(url) {
   result = httr::GET("https://www.googleapis.com/urlshortener/v1/url",
                      query = list(access_token = token$credentials$access_token, shortUrl = url))
 
-  stop_for_status(result)
+  httr::stop_for_status(result)
 
   httr::content(result)$longUrl
 }
@@ -22,7 +22,7 @@ expand.bitly <- function(url) {
   result = httr::GET("https://api-ssl.bit.ly/v3/expand",
                      query = list(access_token = token$credentials$access_token, shortUrl = url))
 
-  stop_for_status(result)
+  httr::stop_for_status(result)
 
   # This is a list of expanded URLs, so in principle we could expand multiple (up to 15?) URLs with a single call.
   httr::content(result)$data$expand[[1]]$long_url

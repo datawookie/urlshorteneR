@@ -4,6 +4,11 @@ A small library for generating short URLs in R.
 
 The [longurl](https://cran.r-project.org/web/packages/longurl/) package will expand URLs from a range of URL shortening services. There is a surprisingly large number of these services (check out the [list](http://api.longurl.org/v2/services)). I tried this package and it does a great job of expanding shortened URLs. It does not provide a shortening service though or access to analytics.
 
+Changes Required
+---
+
+1. Move code from `test-script.R` into tests.
+
 Installation
 ---
 

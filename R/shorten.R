@@ -8,7 +8,7 @@ shorten.google <- function(url) {
                 body = list(longUrl = url),
                 encode = "json")
 
-  stop_for_status(result)
+  httr::stop_for_status(result)
 
   httr::content(result)$id
 }
@@ -21,7 +21,7 @@ shorten.bitly <- function(url) {
   result = httr::GET("https://api-ssl.bit.ly/v3/shorten",
                query = list(access_token = token$credentials$access_token, longUrl = url))
 
-  stop_for_status(result)
+  httr::stop_for_status(result)
 
   httr::content(result)$data$url
 }

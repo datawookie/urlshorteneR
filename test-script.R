@@ -23,4 +23,4 @@ analytics.bitly("http://bit.ly/1Qho4Y5")
 
 library(longurl)
 
-expand_urls(c("http://goo.gl/3WwfIY", "http://bit.ly/1Qho4Y5"), warn = FALSE)
+expand_urls(c("http://goo.gl/V7EYGy", "http://bit.ly/1Qho4Y5"), warn = FALSE)
