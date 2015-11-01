@@ -1,3 +1,7 @@
+# http://adv-r.had.co.nz/R5.html
+
+# Basic outline for reference class implementation.
+
 urlShortener <- setRefClass("urlShortener",
                             fields = list( key = "character",
                                            secret = "character"),
